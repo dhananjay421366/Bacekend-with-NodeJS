@@ -12,7 +12,9 @@ app.get('/login',(req,res)=>{
 app.get('/google',(req,res)=>{
   res.send('<b>google</b>')
 })
-
+app.get('/dhanu',(req,res)=>{
+  res.send('<b>dhanu</b>')
+})
 app.listen(process.env.PORT, () => {
   console.log(`Example app listening on port ${port}`);
 });
