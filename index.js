@@ -4,10 +4,13 @@ const app = express();
 const port = 3000;
 
 app.get("/", (req, res) => {
-  res.send("Hello World!");
+  res.send("<b>Hello World!</b>");
 });
 app.get('/login',(req,res)=>{
-    res.send('<h1>how are dhanu</h1>')
+    res.send('<b>how are dhanu</b>')
+})
+app.get('/google',(req,res)=>{
+  res.send('<b>google</b>')
 })
 
 app.listen(process.env.PORT, () => {
